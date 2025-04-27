@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light/dark mode toggle</title>
+    <style>
+        body{
+            color: black;
+            background-color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+        #d{
+            margin-top: 150px;
+            text-align: center;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="d">
+        <h1>THIS IS A SIMPLE WEB PAGE</h1>
+        <p>this web page tests the light and dark mode toggling button.</p>
+        <button onclick="changemode()">CHANGE THEME</button>
+    </div>
+    <script>
+        function changemode() {
+          if(document.body.style.backgroundColor === "black"){
+            document.body.style.color = "black";
+            document.body.style.backgroundColor = "white";
+          }else{
+            document.body.style.color = "white";
+            document.body.style.backgroundColor = "black";
+            
+          }
+        }
+      </script>
+    
+</body>
+</html>
